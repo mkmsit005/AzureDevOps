@@ -6,14 +6,20 @@
 trigger:
 - master
 
+variables:
+  test: true
+
+parameters:
+  Testing: false@1  
+
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world! 
-  displayName: 'Run a one-line script'
-
+##- task: if parameters.Testing =='true':
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    echo "PreReq Script run"
+    else
+    echo "No PreReq Script to be run"
+    fi
   displayName: 'Run a multi-line script'
