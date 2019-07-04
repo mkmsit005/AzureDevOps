@@ -9,14 +9,15 @@ trigger:
 variables:
   test: true
 
+parameters:
+  Testing: false@1  
+
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
+##- task: if parameters.Testing =='true':
 - script: |
-    condition: eq(variables.test, 'false')
-    then
     echo "PreReq Script run"
     else
     echo "No PreReq Script to be run"
