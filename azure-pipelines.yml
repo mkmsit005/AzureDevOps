@@ -14,6 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Pipeline created for POC
+    echo Azure Pipeline created for POC 
     echo AzureDevOps POC
   displayName: 'Run a multi-line script'
