@@ -23,6 +23,6 @@ steps:
   inputs:
       #SourceFolder: deployment
       Contents: '*.*'
-      TargetFolder: '$(build.artifactstagingdirectory1)/Template'
+      TargetFolder: '$(build.artifactstagingdirectory)/Templates'
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
