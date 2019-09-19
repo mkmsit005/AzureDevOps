@@ -26,3 +26,4 @@ steps:
       TargetFolder: '$(build.artifactstagingdirectory)/Templates'
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
+  
